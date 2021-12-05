@@ -1,0 +1,43 @@
+{%extends 'admins/adminbase.html'%}
+{%load static%}
+{%block contents%}
+
+
+
+ <div class="section-title">
+          <h2>COVID</h2>
+          <h3>Upload an CT Scan image <span> COVID-19</span></h3>
+          <p>
+<form  action="{%url 'UploadImageAction'%}" enctype="multipart/form-data" method="POST">
+{%csrf_token%}
+												 <table>
+                        <div class="form-group row">
+                <div class="col-md-12">
+					<strong>Select an Image</strong>  <input type="file" name="file"  accept="image/gif, image/jpeg, image/png" required placeholder="Select an Image to Upload"><br/>
+                </div>
+              </div>
+                        <div class="form-group row">
+
+              </div>
+
+
+                                <button class="btn  btn-primary text-white py-3 px-5"
+                                        type="submit">
+                                    Upload
+                                </button>
+<h1>Results is <span>{{result}}</span></h1>
+                                                     <h4>Please Upload CT Scan Images like this</h4>
+
+                                                     <img src="{%static 'images/ctscan.png'%}">
+
+                        {% if messages %}
+                        {% for message in messages %}
+                        <font color='GREEN'> {{ message }}</font>
+                        {% endfor %}
+                        {% endif %}
+
+                    </table>
+</form>
+          </p>
+        </div>
+{%endblock%}

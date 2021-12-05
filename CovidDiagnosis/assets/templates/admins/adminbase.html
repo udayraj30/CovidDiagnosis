@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>COVID-19: Deep Learning Approaches</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{%static 'assets/img/favicon.png'%}" rel="icon">
+  <link href="{%static 'assets/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{%static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{%static 'assets/vendor/icofont/icofont.min.css'%}" rel="stylesheet">
+  <link href="{%static 'assets/vendor/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+  <link href="{%static 'assets/vendor/owl.carousel/assets/owl.carousel.min.css'%}" rel="stylesheet">
+  <link href="{%static 'assets/vendor/venobox/venobox.css'%}" rel="stylesheet">
+  <link href="{%static 'assets/vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{%static 'assets/css/style.css'%}" rel="stylesheet">
+
+</head>
+
+<body>
+ <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+        <h1 class="logo mr-auto"><a href="{%url 'AdminHome'%}"><span>COVID-19:</span> Deep Learning for Diagnosis</a></h1>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="{%url 'AdminHome'%}">Home</a></li>
+          <li><a href="{%url 'ViewRegisteredUsers'%}">User</a></li>
+          <li><a href="{%url 'TestCTScanImageForm'%}">CT Scan</a></li>
+          <li><a href="{%url 'logout'%}">logout</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+
+  <main id="main">
+<br/><br/><br/><br/>
+
+    <section id="about" class="about section-bg">
+      <div class="container" data-aos="fade-up">
+
+       {%block contents%}
+
+       {%endblock%}
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="100">
+            <img src="{%static 'assets/img/about.jpg'%}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <h3>THE POSSIBLE PLATFORM TO ACCELERATE CONVENTIONAL METHODS</h3>
+            <p class="font-italic">
+              Finding solutions for high-risk groups who face COVID-19 is the main concern of the present paper. Since reaching the best possible results is the main objective.
+            </p>
+            <ul>
+              <li>
+                <i class="bx bx-store-alt"></i>
+                <div>
+                  <h5>Recurrent Neural Networks (RNNs)</h5>
+                  <p>Recurrent Neural Network(RNN) are a type of Neural Network where the output from previous step are fed as input to the current step. In traditional neural networks, all the inputs and outputs are independent of each other, but in cases like when it is required to predict the next word of a sentence, the previous words are required and hence there is a need to remember the previous words. Thus RNN came into existence, which solved this issue with the help of a Hidden Layer.</p>
+                </div>
+              </li>
+              <li>
+                <i class="bx bx-images"></i>
+                <div>
+                  <h5>LSTM network</h5>
+                  <p>Long Short-Term Memory (LSTM) networks are a type of recurrent neural network capable of learning order dependence in sequence prediction problems. This is a behavior required in complex problem domains like machine translation, speech recognition, and more. LSTMs are a complex area of deep learning</p>
+                </div>
+              </li>
+            </ul>
+            <p>
+              AI-based model exists to estimate the behavior
+of Remdesivir as well as some clinical parameters. As noted
+in, suggest compared to patients with high viral replication
+and systemic virus dissemination, patients with a viral
+load decrease in the upper respiratory tract may need various
+therapeutic approaches depending on viral kinetics monitoring,
+may be required. However, due to the small number
+of patients in this case data analysis be done cautiously.
+Reference [64] has studied clinical and biological data of
+ve COVID-19 patients.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+     </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Alex Corporation</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{%static 'assets/vendor/jquery/jquery.min.js'%}"></script>
+  <script src="{%static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{%static 'assets/vendor/jquery.easing/jquery.easing.min.js'%}"></script>
+  <script src="{%static 'assets/vendor/php-email-form/validate.js'%}"></script>
+  <script src="{%static 'assets/vendor/waypoints/jquery.waypoints.min.js'%}"></script>
+  <script src="{%static 'assets/vendor/counterup/counterup.min.js'%}"></script>
+  <script src="{%static 'assets/vendor/owl.carousel/owl.carousel.min.js'%}"></script>
+  <script src="{%static 'assets/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+  <script src="{%static 'assets/vendor/venobox/venobox.min.js'%}"></script>
+  <script src="{%static 'assets/vendor/aos/aos.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{%static 'assets/js/main.js'%}"></script>
+
+</body>
+
+</html>
