@@ -1,0 +1,2 @@
+# CovidDiagnosis
+this is readme
